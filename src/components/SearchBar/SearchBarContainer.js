@@ -2,7 +2,7 @@
 import React from "react";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+const SearchBar = ({value, onChange}) => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
@@ -12,6 +12,8 @@ const SearchBar = () => {
         <input
           type="text"
           placeholder="Search"
+          value={value}
+          onChange={onChange}
         />
       </form>
       <div className="social-wrapper">
